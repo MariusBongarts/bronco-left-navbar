@@ -5,7 +5,7 @@ const componentCSS = require('./app.component.scss');
 
 /**
  * Modern left navbar built with Lit-Element
- * @event selected - Dispatches a CustomEvent nav item is selected. Selected item is stored in detail of Custom event
+ * @event selected - Dispatches a CustomEvent when nav item is selected. Selected item is stored in detail of Custom event
  * @cssprop --bg-color - Background color
  * @cssprop --bg-color-hover - Background color when hovered
  * @cssprop --color - text color
