@@ -1,0 +1,78 @@
+:host {
+  --bg-color: rgb(0, 0, 0);
+  --bg-color-hover: var(--primary-color);
+  --color: #838383;
+  --color-hover: white;
+  --color-selected: var(--primary-color);
+  --item-width: 10em;
+  --item-height: 2.5em;
+  --margin-top: 0;
+  --position: absolute;
+  --primary-color: rgb(29, 202, 255);
+  --shadow-x: 1.5em;
+  --shadow-y: 1em;
+}
+
+ul {
+  position: var(--position);
+  margin: 0;
+  padding: 0px;
+  list-style: none;
+  z-index: 99;
+  margin-top: var(--margin-top);
+}
+
+.listItem {
+  margin-top: 10px;
+  padding: 0px 5px;
+  background: var(--bg-color);
+  color: var(--color);
+  text-align: center;
+  height: var(--item-height);
+  width: var(--item-width);
+  line-height: 2.5em;
+  font-size: 0.9em;
+  position: relative;
+  text-decoration: none;
+  vertical-align: middle;
+  box-shadow: var(--shadow-x) var(--shadow-y) 0 #e1e1e150;
+  transition: all .20s linear;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--bg-color-hover);
+    color: var(--color-hover);
+    transform: translate(.9em, 0em);
+    transition: all .25s linear;
+    box-shadow: -1.5em 1em 0 #e1e1e150;
+  }
+}
+
+svg {
+  margin: 10px 10px;
+}
+
+.selected {
+  color: var(--color-selected);
+  transform: translate(.9em, -.19em);
+}
+
+.selected:hover {
+  color: var(--color-hover);
+}
+
+// Animations
+
+.loop {
+  background: var(--bg-color-hover);
+  color: var(--color-hover);
+  transform: translate(.9em, -.9em);
+  transition: all .25s linear;
+  box-shadow: -2em 2em 0 #e1e1e1;
+  animation: turner .4s infinite linear;
+}
+
+@keyframes turner{
+    from{  transform: rotateY(0deg)   }
+    to  {  transform: rotateY(360deg) }
+}
