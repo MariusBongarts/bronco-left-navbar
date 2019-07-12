@@ -17,6 +17,7 @@ const componentCSS = require('./app.component.scss');
  * @cssprop --min-width - Width of button
  * @cssprop --position - Possible change position attribute
  * @cssprop --primary-color - Change primary color easily
+ * @cssprop --rotation-3d - Customize the rotation of the rotation effect by changing degree (Default: 10deg)
  * @cssprop --shadow-x - Shadow-x of button
  * @cssprop --shadow-y - Shadow-y of button
  */
@@ -41,8 +42,16 @@ export class BroncoLeftNavbar extends LitElement {
   @property()
   selectedItem = this.navItems[0];
 
+  /**
+   * Enable or disable the 3d effect of the list items
+   * @type {boolean}
+   * @memberof BroncoLeftNavbar
+   */
+  @property()
+  effect3d = true;
+
   getClassMap(item: string) {
-    const classInfo = { listItem: true, selected: this.selectedItem === item };
+    const classInfo = { listItem: true, selected: this.selectedItem === item, effect3dli: this.effect3d };
     return classInfo;
   }
 
@@ -57,9 +66,10 @@ export class BroncoLeftNavbar extends LitElement {
 
   render() {
     return html`
-                    <ul>
+                    <ul class="${this.effect3d ? 'effect3dul' : ''}">
                       ${this.navItems.map(item => html`
-                      <li @click=${() => {
+                      <li
+                      @click=${() => {
                   this.selectedItem = item;
                   this.emit(item);
                   }}

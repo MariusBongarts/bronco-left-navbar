@@ -5,10 +5,11 @@
   --color-hover: white;
   --color-selected: var(--primary-color);
   --item-width: 10em;
-  --item-height: 2.5em;
+  --item-height: 3em;
   --margin-top: 0;
   --position: absolute;
   --primary-color: rgb(29, 202, 255);
+  --rotation-3d: 10deg;
   --shadow-x: 1.5em;
   --shadow-y: 1em;
 }
@@ -30,7 +31,7 @@ ul {
   text-align: center;
   height: var(--item-height);
   width: var(--item-width);
-  line-height: 2.5em;
+  line-height: var(--item-height);
   font-size: 0.9em;
   position: relative;
   text-decoration: none;
@@ -46,6 +47,14 @@ ul {
     transition: all .25s linear;
     box-shadow: -1.5em 1em 0 #e1e1e150;
   }
+}
+
+.effect3dul {
+  perspective: 500px;
+}
+
+.effect3dli {
+  transform: rotateY(var(--rotation-3d));
 }
 
 svg {

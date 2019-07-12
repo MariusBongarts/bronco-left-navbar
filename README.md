@@ -18,34 +18,36 @@ Modern left navbar built with Lit-Element
 
 ### Properties
 
-| Property       | Type       | Description                                      |
-|----------------|------------|--------------------------------------------------|
-| `navItems`     | `string[]` | Takes an array to set the nav items of this components |
-| `selectedItem` | `string`   | Sets selected item. Default is first item        |
+| Property       | Type       | Default | Description                                      |
+|----------------|------------|---------|--------------------------------------------------|
+| `effect3d`     | `boolean`  | true    | Enable or disable the 3d effect of the list items |
+| `navItems`     | `string[]` |         | Takes an array to set the nav items of this components |
+| `selectedItem` | `string`   |         | Sets selected item. Default is first item        |
 
 ### Events
 
 | Event      | Description                                      |
 |------------|--------------------------------------------------|
-| `selected` | Dispatches a CustomEvent nav item is selected. Selected item is stored in detail of Custom event |
+| `selected` | Dispatches a CustomEvent when nav item is selected. Selected item is stored in detail of Custom event |
 
 ### CSS Custom Properties
 
-| Property           | Description                        |
-|--------------------|------------------------------------|
-| `--bg-color`       | Background color                   |
-| `--bg-color-hover` | Background color when hovered      |
-| `--color`          | text color                         |
-| `--color-hover`    | text color when hovered            |
-| `--color-selected` | text color when item is selected   |
-| `--item-height`    | Height of nav items                |
-| `--item-width`     | Width of nav items                 |
-| `--margin-top`     | Margin to the top                  |
-| `--min-width`      | Width of button                    |
-| `--position`       | Possible change position attribute |
-| `--primary-color`  | Change primary color easily        |
-| `--shadow-x`       | Shadow-x of button                 |
-| `--shadow-y`       | Shadow-y of button                 |
+| Property           | Description                                      |
+|--------------------|--------------------------------------------------|
+| `--bg-color`       | Background color                                 |
+| `--bg-color-hover` | Background color when hovered                    |
+| `--color`          | text color                                       |
+| `--color-hover`    | text color when hovered                          |
+| `--color-selected` | text color when item is selected                 |
+| `--item-height`    | Height of nav items                              |
+| `--item-width`     | Width of nav items                               |
+| `--margin-top`     | Margin to the top                                |
+| `--min-width`      | Width of button                                  |
+| `--position`       | Possible change position attribute               |
+| `--primary-color`  | Change primary color easily                      |
+| `--rotation-3d`    | Customize the rotation of the rotation effect by changing degree (Default: 10deg) |
+| `--shadow-x`       | Shadow-x of button                               |
+| `--shadow-y`       | Shadow-y of button                               |
 
 
 
