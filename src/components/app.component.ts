@@ -51,7 +51,7 @@ export class BroncoLeftNavbar extends LitElement {
   effect3d = true;
 
   getClassMap(item: string) {
-    const classInfo = { listItem: true, selected: this.selectedItem === item, effect3dli: this.effect3d };
+    const classInfo = { listItem: true, selected: this.selectedItem === item, effect3dli: this.effect3d === true};
     return classInfo;
   }
 
