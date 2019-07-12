@@ -48,6 +48,7 @@ Modern left navbar built with Lit-Element
 | `--rotation-3d`    | Customize the rotation of the rotation effect by changing degree (Default: 10deg) |
 | `--shadow-x`       | Shadow-x of button                               |
 | `--shadow-y`       | Shadow-y of button                               |
+| `--z-index`        | Default: 1                                       |
 
 
 

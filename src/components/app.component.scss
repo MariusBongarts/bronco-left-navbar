@@ -12,6 +12,7 @@
   --rotation-3d: 10deg;
   --shadow-x: 1.5em;
   --shadow-y: 1em;
+  --z-index: 1;
 }
 
 ul {
@@ -19,7 +20,7 @@ ul {
   margin: 0;
   padding: 0px;
   list-style: none;
-  z-index: 99;
+  z-index: var(--z-index);
   margin-top: var(--margin-top);
 }
 

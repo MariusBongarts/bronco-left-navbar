@@ -20,6 +20,7 @@ const componentCSS = require('./app.component.scss');
  * @cssprop --rotation-3d - Customize the rotation of the rotation effect by changing degree (Default: 10deg)
  * @cssprop --shadow-x - Shadow-x of button
  * @cssprop --shadow-y - Shadow-y of button
+ * @cssprop --z-index - Default: 1
  */
 @customElement('bronco-left-navbar')
 export class BroncoLeftNavbar extends LitElement {
