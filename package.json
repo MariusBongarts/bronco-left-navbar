@@ -1,5 +1,7 @@
 {
   "name": "@marius/broncoleftnavbar",
+  "identifier": "bronco-left-navbar",
+  "identifier-git": "broncoleftnavbar",
   "version": "1.0.0",
   "description": "Modern left navbar built with Lit-Element",
   "private": true,

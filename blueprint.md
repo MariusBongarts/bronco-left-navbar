@@ -6,6 +6,16 @@
   on <a target="_blank" href="https://codepen.io">CodePen</a>.</span>
 </p>
 
+## Installation
+
+```
+$ npm i https://github.com/marius2502/{{ pkg.identifier }}.git
+```
+
+```javascript
+import '@marius/{{ pkg.identifier-git }}/dist/main';
+
+
 {{ doc:src/components/app.component.ts }}
 
 {{ template:contributors }}
