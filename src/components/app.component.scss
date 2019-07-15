@@ -5,7 +5,7 @@
   --color-hover: white;
   --color-selected: var(--primary-color);
   --item-width: 10em;
-  --item-height: 3em;
+  --item-height: 2.5em;
   --margin-top: 0;
   --position: absolute;
   --primary-color: rgb(29, 202, 255);
@@ -40,6 +40,7 @@ ul {
   box-shadow: var(--shadow-x) var(--shadow-y) 0 #e1e1e150;
   transition: all .20s linear;
   cursor: pointer;
+  user-select: none;
 
   &:hover {
     background: var(--bg-color-hover);
@@ -51,7 +52,7 @@ ul {
 }
 
 .effect3dul {
-  perspective: 500px;
+  perspective: 700px;
 }
 
 .effect3dli {
