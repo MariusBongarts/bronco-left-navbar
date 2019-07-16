@@ -1,38 +1,52 @@
 :host {
-  --bg-color: rgb(0, 0, 0);
+  --bg-color: rgba(233, 233, 233, 0.233);
+  --bg-color-item: rgb(0, 0, 0);
   --bg-color-hover: var(--primary-color);
   --color: #838383;
   --color-hover: white;
   --color-selected: var(--primary-color);
-  --item-width: 10em;
+  --item-width: 80%;
   --item-height: 2.5em;
-  --margin-top: 0;
-  --position: absolute;
+  --margin-top-items: 10px;
+  --padding-top: 10vh;
+  --position: fixed;
   --primary-color: rgb(29, 202, 255);
   --rotation-3d: 10deg;
   --shadow-x: 1.5em;
   --shadow-y: 1em;
+  --sidebar-width: 15em;
+  --sidebar-min-height: 100vh;
   --z-index: 1;
 }
 
 ul {
+  background-color: var(--bg-color);
+  padding-top: var(--padding-top);
   position: var(--position);
+  box-shadow: 0px 8px 8px rgba(128, 128, 128, 0.322);
   margin: 0;
-  padding: 0px;
+  min-height: var(--sidebar-min-height);
+  padding: 0;
+  padding-top: var(--padding-top);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: left;
+  width: var(--sidebar-width);
   list-style: none;
-  z-index: var(--z-index);
-  margin-top: var(--margin-top);
 }
 
-.listItem {
-  margin-top: 10px;
+li {
+  padding-top: 10px;
   padding: 0px 5px;
-  background: var(--bg-color);
+  background: var(--bg-color-item);
+  box-shadow: 0px 8px 8px rgba(128, 128, 128, 0.322);
   color: var(--color);
   text-align: center;
   height: var(--item-height);
   width: var(--item-width);
   line-height: var(--item-height);
+  margin-top: var(--margin-top-items);
   font-size: 0.9em;
   position: relative;
   text-decoration: none;

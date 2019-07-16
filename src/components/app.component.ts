@@ -8,18 +8,21 @@ const componentCSS = require('./app.component.scss');
  * @event selected - Dispatches a CustomEvent when nav item is selected. Selected item is stored in detail of Custom event
  * @cssprop --bg-color - Background color
  * @cssprop --bg-color-hover - Background color when hovered
+ * @cssprop --bg-color-item - Background color of nav item
  * @cssprop --color - text color
  * @cssprop --color-hover - text color when hovered
  * @cssprop --color-selected - text color when item is selected
  * @cssprop --item-width - Width of nav items
  * @cssprop --item-height - Height of nav items
  * @cssprop --margin-top - Margin to the top
- * @cssprop --min-width - Width of button
+ * @cssprop --padding-top - Defines where navItems should begin
  * @cssprop --position - Possible change position attribute
  * @cssprop --primary-color - Change primary color easily
  * @cssprop --rotation-3d - Customize the rotation of the rotation effect by changing degree (Default: 10deg)
  * @cssprop --shadow-x - Shadow-x of button
  * @cssprop --shadow-y - Shadow-y of button
+ * @cssprop --sidebar-width - Width of sidebar
+ * @cssprop --sidebar-min-height - Height of sidebar
  * @cssprop --z-index - Default: 1
  */
 @customElement('bronco-left-navbar')
@@ -52,7 +55,7 @@ export class BroncoLeftNavbar extends LitElement {
   effect3d = true;
 
   getClassMap(item: string) {
-    const classInfo = { listItem: true, selected: this.selectedItem === item, effect3dli: this.effect3d === true};
+    const classInfo = { selected: this.selectedItem === item, effect3dli: this.effect3d === true};
     return classInfo;
   }
 
